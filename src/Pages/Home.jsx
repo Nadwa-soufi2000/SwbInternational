@@ -127,7 +127,7 @@ export default function Home()
                 <div key={i} className={`absolute w-full h-full inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out  ${i === index ? "opacity-100" : "opacity-0"} `} style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(${bg.img})`}}>
                    <h1 className=' absolute left-[6%] top-[30%] text-[23px] sm:text-[36px] md:text-[40px] lg:text-[60px] xl:text-[64px] text-[#FFFFFF] font-[Manrope] font-bold'>{bg.title}<p>{bg.title2}</p></h1>  
                    <div className=' text-[#FFFFFF] text-[10px] md:text-[16px] lg:text-[20px] xl:text-[20px]  absolute left-[6%] top-[57%]'><p>{bg.para}</p><p>{bg.para2}</p></div> 
-                   <Link className="w-[250px] sm:w-[294px] flex justify-center gap-4 items-center left-[-4%] top-[73%] sm:left-[-3%] sm:top-[72%] md:left-[2%] md:top-[70%] lg:left-[6%] lg:top-[70%] xl:left-[6%] xl:top-[70%] relative"><p className="text-[#FFFFFF] text-[17px] md:text-[20px] lg:text-[24px]">Discover Our Story</p><img className="w-[25px] h-[25px] md:h-[40px] md:w-[40px] lg:w-[60px] lg:h-[60px]" src={arrow}/></Link>
+                   <Link to='/ourStory' className="w-[250px] sm:w-[294px] flex justify-center gap-4 items-center left-[-4%] top-[73%] sm:left-[-3%] sm:top-[72%] md:left-[2%] md:top-[70%] lg:left-[6%] lg:top-[70%] xl:left-[6%] xl:top-[70%] relative"><p className="text-[#FFFFFF] text-[17px] md:text-[20px] lg:text-[24px]">Discover Our Story</p><img className="w-[25px] h-[25px] md:h-[40px] md:w-[40px] lg:w-[60px] lg:h-[60px]" src={arrow}/></Link>
                    <div className="flex justify-center items-center gap-4 sm:gap-7  h-[15px] absolute left-[20%] sm:left-[30%] md:left-[20%] lg:left-[27%] xl:left-[30%] top-[90%]">
                         <span className="w-[20px] sm:w-[25px] md:w-[60px] h-[3px] rounded-[10px]" style={{backgroundColor: index === 0 ? '#a16207' : 'gray'}}></span>
                         <span className="w-[20px] sm:w-[25px] md:w-[60px] h-[3px] rounded-[10px]" style={{backgroundColor: index === 1 ? '#a16207' : 'gray'}}></span>
@@ -224,14 +224,14 @@ export default function Home()
                                <div className="py-[14px] bg-[#ddd] rounded-[10px] xl:w-[370px] lg:w-[230px]  md:w-[50%] w-[50%]"><img src={da5} className=" rounded-[10px] w-full h-[140px] sm:h-[170px] md:h-[240px] lg:h-[210px]  xl:h-[280px]"/><p className="text-center text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] text-[#000000]">Automatic Caramel Making Machine</p></div>
                             </div>
                             <div className="flex justify-center items-center gap-4 w-full">
-                                <div className="py-[14px] bg-[#ddd] rounded-[10px] xl:w-[370px] lg:w-[230px]  md:w-[50%] w-[50%]"><img src={da2} className=" rounded-[10px] w-full h-[140px] sm:h-[170px] md:h-[240px]  lg:h-[210px]  xl:h-[280px]"/><p className="text-center text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] text-[#000000]">Chocolate Sifting Machine</p></div>
+                                <div className="py-[14px] bg-[#ddd] rounded-[10px] xl:w-[370px] lg:w-[230px]  md:w-[50%] w-[50%]"><img src={da2} className=" rounded-[10px] w-full h-[144px] sm:h-[170px] md:h-[240px]  lg:h-[210px]  xl:h-[280px]"/><p className="text-center text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] text-[#000000]">Chocolate Sifting Machine</p></div>
                                 <div className="py-[14px] bg-[#ddd] rounded-[10px] xl:w-[370px] lg:w-[230px]  md:w-[50%] w-[50%]"><img src={da7} className="rounded-[10px] w-full h-[140px] sm:h-[170px]  md:h-[240px] lg:h-[210px]  xl:h-[280px]"/><p className="text-center text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] text-[#000000]">Cocoa Bean Roaster Machine</p></div>
                             </div>
                         </div>
                     </div>
                     <ReadMoreComponent 
                       title='SAWTRU GROUP PACKAGING'
-                      link='/dairaTechnology'
+                      link='/sawtruGroub'
                       p1='Recognizing China’s position as one of the world most dynamic and fast-evolving markets,'
                       p2='SWB made the strategic decision to establish a strong presence there.'
                     />

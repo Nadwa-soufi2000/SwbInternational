@@ -7,11 +7,13 @@ import "swiper/css/pagination";
 export default function ImageSwiper(props) {
   return (
    <div className="w-[98%] flex flex-col justify-center items-center gap-4">
+     {props.p1 &&
       <div className="flex flex-col justify-center items-start w-full text-[13px] md:text-[18px] font-medium text-[#000000] sm:pl-0 pl-[8px]">
          <p>{props.p1}</p>
          <p>{props.p2}</p>
         {props.p3 && <p>{props.p3}</p>}
       </div>
+      }
        <Swiper
           modules={[Pagination , Autoplay]}
           spaceBetween={20}

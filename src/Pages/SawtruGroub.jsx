@@ -73,7 +73,7 @@ export default function SawtruGroub()
                      </div>
           
                      <div className='flex justify-between items-center gap-[18px] xl:gap-0 w-full py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
-                           <img src={sw3} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[650px] xl:h-[450px] rounded-[10px]'/>
+                           <img src={sw3} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[650px] xl:h-[540px] rounded-[10px]'/>
                            <img src={sw4} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[580px] xl:h-[540px] rounded-[10px]'/>
                      </div>
           

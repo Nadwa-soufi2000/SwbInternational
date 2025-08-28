@@ -26,6 +26,7 @@ import b6 from '../assets/b6.png'
 import b7 from '../assets/b7.png'
 import SliderBigScreen from '../Components/SliderBigScreen.jsx'
 import SliderSmallScreen from '../Components/SliderSmallScreen.jsx'
+import { Link } from 'react-router-dom'
 
 export default function BostaniChocolate() 
 {
@@ -66,7 +67,7 @@ export default function BostaniChocolate()
                      open={open}
                  />
                  <h1 className=' absolute left-[6%] top-[44%] text-[20px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[64px] text-[#FFFFFF] font-[Manrope] font-bold'>BOSTANI CHOCOLATE</h1>  
-                 <div className='rounded-full flex justify-center items-center bg-gray-500 text-[#FFFFFF] text-[13px] md:text-[16px] lg:text-[20px] xl:text-[20px] w-[170px] h-[40px] md:w-[200px] md:h-[40px] lg:w-[290px] lg:h-[50px] xl:w-[305px] xl:h-[56px] absolute left-[6%] top-[70%] underline gap-[3px]'>visit our website <MdOutlineArrowRightAlt className='fill-current text-[#FFFFFF] text-[25px] mt-[10px]'/></div>                       
+                 <Link to='https://www.bostani.com/ar-sa' className='rounded-full flex justify-center items-center bg-gray-500 text-[#FFFFFF] text-[13px] md:text-[16px] lg:text-[20px] xl:text-[20px] w-[170px] h-[40px] md:w-[200px] md:h-[40px] lg:w-[290px] lg:h-[50px] xl:w-[305px] xl:h-[56px] absolute left-[6%] top-[70%] underline gap-[3px]'>visit our website <MdOutlineArrowRightAlt className='fill-current text-[#FFFFFF] text-[25px] mt-[10px]'/></Link>                       
                  { open === 'About'  && <AboutLinks setOpen={setOpen}/> }               
                  { open === 'Companies' && <CompaniesLinks setOpen={setOpen}/> }
             </div>
@@ -132,7 +133,7 @@ export default function BostaniChocolate()
                     <BostaniChocolatePicture pic={bostaniBg2} diff={true}/>
                 </div>
                 <div className='flex justify-between items-center gap-[18px] xl:gap-0 w-full py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
-                    <img src={love} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[650px] xl:h-[450px] rounded-[10px]'/>
+                    <img src={love} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[650px] xl:h-[540px] rounded-[10px]'/>
                     <img src={boxs} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[580px] xl:h-[540px] rounded-[10px]'/>
                 </div>
             </div>

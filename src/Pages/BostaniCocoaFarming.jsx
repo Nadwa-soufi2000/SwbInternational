@@ -43,7 +43,7 @@ export default function CocoaFarming()
                         width='562px'
                         height='430px'
                         diff={false}
-                        diff2={false}
+                        diff2={true}
                     />
                 </div>
                 <div className=' flex items-center xl:gap-0 gap-[18px] justify-between py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
