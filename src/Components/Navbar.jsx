@@ -85,36 +85,36 @@ export default function Navbar(props)
     return(
         <div className="relative z-[1] md:w-full lg:bg-transparent lg:mt-0 lg:left-0  lg:w-[94%] xl:w-[1280.19px] px-[20px] lg:px-0 py-[20px] flex justify-between items-start my-[0px] mx-auto" id='nav'>
             <img src={swbW} className='w-[35px] h-[20px] sm:w-[60px] sm:h-[42px]'/>
-            <ul className='hidden  lg:flex xl:flex justify-between items-start w-[487px] lg:flex-row lg:gap-0'>
+            <ul className='hidden  lg:flex xl:flex justify-between items-start w-[90%] md:w-[487px] lg:w-[487px] lg:flex-row lg:gap-0'>
                 <Link to='/home' className='text-[#FFFFFF] text-[16px] lg:text-[20px] font-[Manrope]'>HOME</Link>
-                <li className='flex flex-col'>
+                <li className='flex flex-col md:w-auto w-[100%]'>
                   <li onClick={() => AboutFunc()} className="flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope]" style={{color :props.open === 'About' || openAboutList ? '#a16207' : '#FFFFFF'}}>ABOUT<SlArrowDown/></li>
                   { props.open === 'About' && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                   { openAboutList && <span className='h-[2px] bg-yellow-700 w-full'></span> }
                   {openAboutList &&
-                    <div className='lg:hidden flex flex-col justify-center items-start pl-[10px] py-[25px] gap-[20px] w-[230px]  duration-1000 delay-1000'>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px]  hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Who We Are</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Global Footprint</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>The Story Behind The Brand</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Contact Us</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
+                    <div className='lg:hidden flex flex-col justify-center items-start pl-[2px] py-[25px] gap-[20px] w-[100%]'>
+                         <Link to='/whoWeAre' className='w-full flex p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500 text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px]'><p>Who We Are</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/globalFootprint' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Global Footprint</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/ourStory' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>The Story Behind The Brand</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/contactUs' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Contact Us</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
                     </div>
                   }
                 </li>
-                <li className='flex flex-col'>
+                <li className='flex flex-col w-full md:w-auto'>
                    <li className='flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope]' onClick={() => CompaniesFunc()} style={{color : props.open === 'Companies' || openCompaniesList ? '#a16207' : '#FFFFFF'}}>COMPANIES <SlArrowDown/></li>
                    {props.open === 'Companies' && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                    { openCompaniesList && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                     { openCompaniesList  && 
-                     <div className='lg:hidden flex flex-col justify-center items-start py-[25px] gap-[20px] w-[230px]  duration-1000 delay-1000 pl-[10px]'>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px]  hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Bostani Chocolate</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Bostani Foundation</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Robotic & AI</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Daira Technology</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
-                         <div className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:border-b-[1px] hover:border-b-solid hover:border-b-[#FFFFFF]'><p>Sawtru Group Packaging</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></div>
+                     <div className='lg:hidden flex flex-col justify-center items-start py-[25px] gap-[20px] w-[100%]  pl-[2px]'>
+                         <Link to='/bostaniChocolate' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Bostani Chocolate</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/bostaniFoundation' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Bostani Foundation</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/Robotic' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Robotic & AI</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/DairaTechnology' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Daira Technology</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+                         <Link to='/sawtruGroub' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] p-[5px] rounded-[4px] hover:bg-white/20 hover:pl-[20px] duration-500'><p>Sawtru Group Packaging</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
                     </div>
                   }
                 </li>
-                <li className='text-[#FFFFFF] text-[16px] lg:text-[20px] font-[Manrope]'>JOIN US</li>
+                <Link to='/joinUs' className='text-[#FFFFFF] text-[16px] lg:text-[20px] font-[Manrope]'>JOIN US</Link>
             </ul>
             {openNav === '' && <AiOutlineMenu onClick={() => changeIcon()} className='xl:hidden lg:hidden md:flex fill-current text-[#FFFFFF] hover:border-solid hover:border-[1px] hover:border-[#FFFFFF] w-[20px] h-[20px] sm:w-[36px] sm:h-[40px] md:w-[36px] md:h-[40px] rounded-[2px]'/> }
             {openNav === 'ok' && <IoClose onClick={() => closeMenu()} className='xl:hidden lg:hidden md:flex fill-current text-[#FFFFFF] hover:border-solid hover:border-[1px] hover:border-[#FFFFFF] w-[20px] h-[20px] sm:w-[36px] sm:h-[40px] md:w-[36px] md:h-[40px] rounded-[2px]'/>}
