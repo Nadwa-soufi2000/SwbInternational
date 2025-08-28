@@ -109,7 +109,7 @@ export default function Navbar(props)
                   }
                 </li>
                 <li className='flex flex-col w-full md:w-auto'>
-                   <li id='itemCom' className='flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope]' onClick={() => CompaniesFunc()} style={{color : props.open === 'Companies' || openCompaniesList ? '#a16207' : '#FFFFFF'}}>COMPANIES <SlArrowDown/></li>
+                   <li id='itemCom' className='flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope] duration-500' onClick={() => CompaniesFunc()} style={{color : props.open === 'Companies' || openCompaniesList ? '#a16207' : '#FFFFFF'}}>COMPANIES <SlArrowDown/></li>
                    {props.open === 'Companies' && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                    { openCompaniesList && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                     { openCompaniesList  && 
