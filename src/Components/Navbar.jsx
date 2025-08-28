@@ -29,6 +29,7 @@ export default function Navbar(props)
             let item = document.getElementById('itemAbout')
             item.classList.toggle('bg-white/20')
             item.classList.add('rounded-[4px]')
+            item.classList.add('p-[10px]')
             setOpenAboutList(prev => !prev)
         }  
        
@@ -46,6 +47,7 @@ export default function Navbar(props)
             let item = document.getElementById('itemCom')
             item.classList.toggle('bg-white/20')
             item.classList.add('rounded-[4px]')
+            item.classList.add('p-[10px]')
             setOpenCompaniesList(prev => !prev)
         }
     }
