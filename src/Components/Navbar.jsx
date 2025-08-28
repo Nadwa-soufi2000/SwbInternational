@@ -27,7 +27,8 @@ export default function Navbar(props)
         {
             console.log('else')
             let item = document.getElementById('itemAbout')
-            item.classList.add('bg-white/20')
+            item.classList.toggle('bg-white/20')
+            item.classList.add('rounded-[4px]')
             setOpenAboutList(prev => !prev)
         }  
        
@@ -43,7 +44,8 @@ export default function Navbar(props)
         {
             console.log('else2')
             let item = document.getElementById('itemCom')
-            item.classList.add('bg-white/20')
+            item.classList.toggle('bg-white/20')
+            item.classList.add('rounded-[4px]')
             setOpenCompaniesList(prev => !prev)
         }
     }
