@@ -58,6 +58,7 @@ export default function Navbar(props)
         let nav = document.getElementById('nav')
         nav.classList.add('bg-black')
         nav.classList.add('min-h-screen')
+        nav.classList.add('overflow-x-scroll')
         let ul = document.querySelector('ul')
         ul.classList.add('mt-[80px]')
         ul.classList.add('absolute')
@@ -76,6 +77,7 @@ export default function Navbar(props)
         let nav = document.getElementById('nav')
         nav.classList.remove('bg-black')
         nav.classList.remove('min-h-screen')
+        nav.classList.remove('overflow-x-scroll')
         let ul = document.querySelector('ul')
         ul.classList.remove('mt-[80px]')
          ul.classList.remove('absolute')
@@ -91,7 +93,7 @@ export default function Navbar(props)
 
 
     return(
-        <div className="relative z-[1] md:w-full lg:bg-transparent lg:mt-0 lg:left-0  lg:w-[94%] xl:w-[1280.19px] px-[20px] lg:px-0 py-[20px] flex justify-between items-start my-[0px] mx-auto overflow-x-scroll" id='nav'>
+        <div className="relative  z-[1] md:w-full lg:bg-transparent lg:mt-0 lg:left-0  lg:w-[94%] xl:w-[1280.19px] px-[20px] lg:px-0 py-[20px] flex justify-between items-start my-[0px] mx-auto" id='nav'>
             <img src={swbW} className='w-[35px] h-[20px] sm:w-[60px] sm:h-[42px]'/>
             <ul className='hidden  lg:flex xl:flex justify-between items-start w-[90%] md:w-[487px] lg:w-[487px] lg:flex-row lg:gap-0'>
                 <Link to='/home' className='text-[#FFFFFF] text-[16px] lg:text-[20px] font-[Manrope]'>HOME</Link>
