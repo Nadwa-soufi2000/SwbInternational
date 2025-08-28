@@ -26,6 +26,8 @@ export default function Navbar(props)
        else
         {
             console.log('else')
+            let item = document.getElementById('itemAbout')
+            item.classList.add('bg-white/20')
             setOpenAboutList(prev => !prev)
         }  
        
@@ -40,6 +42,8 @@ export default function Navbar(props)
         else
         {
             console.log('else2')
+            let item = document.getElementById('itemCom')
+            item.classList.add('bg-white/20')
             setOpenCompaniesList(prev => !prev)
         }
     }
@@ -88,7 +92,7 @@ export default function Navbar(props)
             <ul className='hidden  lg:flex xl:flex justify-between items-start w-[90%] md:w-[487px] lg:w-[487px] lg:flex-row lg:gap-0'>
                 <Link to='/home' className='text-[#FFFFFF] text-[16px] lg:text-[20px] font-[Manrope]'>HOME</Link>
                 <li className='flex flex-col md:w-auto w-[100%]'>
-                  <li onClick={() => AboutFunc()} className="flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope]" style={{color :props.open === 'About' || openAboutList ? '#a16207' : '#FFFFFF'}}>ABOUT<SlArrowDown/></li>
+                  <li id='itemAbout' onClick={() => AboutFunc()} className="flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope] duration-500" style={{color :props.open === 'About' || openAboutList ? '#a16207' : '#FFFFFF'}}>ABOUT<SlArrowDown/></li>
                   { props.open === 'About' && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                   { openAboutList && <span className='h-[2px] bg-yellow-700 w-full'></span> }
                   {openAboutList &&
@@ -101,7 +105,7 @@ export default function Navbar(props)
                   }
                 </li>
                 <li className='flex flex-col w-full md:w-auto'>
-                   <li className='flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope]' onClick={() => CompaniesFunc()} style={{color : props.open === 'Companies' || openCompaniesList ? '#a16207' : '#FFFFFF'}}>COMPANIES <SlArrowDown/></li>
+                   <li id='itemCom' className='flex justify-start items-center gap-[7px] text-[16px] lg:text-[20px] font-[Manrope]' onClick={() => CompaniesFunc()} style={{color : props.open === 'Companies' || openCompaniesList ? '#a16207' : '#FFFFFF'}}>COMPANIES <SlArrowDown/></li>
                    {props.open === 'Companies' && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                    { openCompaniesList && <span className='h-[3px] bg-yellow-700 w-full'></span> }
                     { openCompaniesList  && 
