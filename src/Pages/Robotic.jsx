@@ -12,6 +12,7 @@ import BostaniChocolatePicture from '../Components/BostaniChocolatePicture.jsx'
 import BostaniChocolateDescription from '../Components/BostaniChocolateDescription.jsx'
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Robotic()
 {
@@ -27,7 +28,7 @@ export default function Robotic()
                     open={open}
                 />
                 <h1 className=' absolute left-[6%] top-[44%] text-[20px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[64px] text-[#FFFFFF] font-[Manrope] font-bold'>Robotic & AI</h1> 
-                <div className='rounded-full flex justify-center items-center bg-gray-500 text-[#FFFFFF] text-[13px] md:text-[16px] lg:text-[20px] xl:text-[20px] w-[170px] h-[40px] md:w-[200px] md:h-[40px] lg:w-[290px] lg:h-[50px] xl:w-[305px] xl:h-[56px] absolute left-[6%] top-[70%] underline gap-[3px]'>visit our website <MdOutlineArrowRightAlt className='fill-current text-[#FFFFFF] text-[25px] mt-[10px]'/></div>                        
+                <Link to='https://www.bostani.com/ar-sa' className='rounded-full flex justify-center items-center bg-gray-500 text-[#FFFFFF] text-[13px] md:text-[16px] lg:text-[20px] xl:text-[20px] w-[170px] h-[40px] md:w-[200px] md:h-[40px] lg:w-[290px] lg:h-[50px] xl:w-[305px] xl:h-[56px] absolute left-[6%] top-[70%] underline gap-[3px]'>visit our website <MdOutlineArrowRightAlt className='fill-current text-[#FFFFFF] text-[25px] mt-[10px]'/></Link>                        
                 { open === 'About'  && <AboutLinks setOpen={setOpen}/> }               
                 { open === 'Companies' && <CompaniesLinks setOpen={setOpen}/> }
           </div>
