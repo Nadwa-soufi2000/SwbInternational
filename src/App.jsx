@@ -11,6 +11,7 @@ import Home from "./Pages/Home"
 import Test from './Pages/Test'
 import BostaniFoundation from "./Pages/BostaniFoundation"
 import BostaniRealEstate from "./Pages/BostaniRealEstate"
+import JoinUs from './Pages/JoinUs'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/Robotic' element={<Robotic/>}/>
         <Route path='/sawtruGroub' element={<SawtruGroub/>}/>
         <Route path='/ourStory' element={<SWB/>}/>
+        <Route path='joinUs' element={<JoinUs/>} />
       </Routes>
     </div>
   )
