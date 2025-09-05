@@ -15,7 +15,7 @@ export default function WhoWeAre()
     const[content , setContent] = useState(false)
 
     return(
-        <div className="w-full md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[1440px] min-h-screen">
+        <div className="w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen">
            <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(${whobg})`}}>
             <Navbar 
                 setOpen={setOpen}
@@ -30,7 +30,7 @@ export default function WhoWeAre()
          { !content &&
              <>
           <div className="flex justify-center items-center w-full flex-col gap-[110px] py-[10px]">
-            <div className="w-[98%] lg:w-[88%] xl:w-[1280px] flex justify-center py-[20px]">
+            <div className="w-[98%] lg:w-[88%] xl:w-[1280px] 2xl:w-[80%] flex justify-center py-[20px]">
               <div className='w-full flex xl:gap-0 gap-[18px] flex-col md:flex-col lg:flex-row xl:flex-row justify-between items-center py-[30px] lg:rotate-0 rotate-[180deg]'>
                   <BostaniChocolatePicture pic={bulding} diff={false}/>
                   <BostaniChocolateDescription
@@ -49,7 +49,7 @@ export default function WhoWeAre()
              </div>
          </div>
 
-          <div className="w-[96%] lg:w-[88%] xl:w-[1280px] rounded-[10px] md:border-0 border-[1px] border-solid border-[#A2948A] relative py-[20px] flex justify-end shadow-lg">
+          <div className="w-[96%] lg:w-[88%] xl:w-[1280px] 2xl:w-[80%] rounded-[10px] md:border-0 border-[1px] border-solid border-[#A2948A] relative py-[20px] flex justify-end shadow-lg">
             <div className="flex flex-col items-start justify-between w-[100%] sm:w-[100%] md:w-[75%] lg:w-[75%] xl:w-[1010px]">
                 <h1 className="text-[#A2948A] md:p-0 p-[10px] text-[18px] md:text-[30px] lg:text-[40px] xl:text-[48px] ">OUR VISION</h1>
                 <div className="flex flex-col md:p-0 p-[10px] items-start justify-center text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#000000]">

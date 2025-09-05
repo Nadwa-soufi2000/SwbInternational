@@ -115,7 +115,7 @@ export default function Home()
 
     
     return (
-        <div className="w-full md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[1440px] min-h-screen">
+        <div className="w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen">
           <div className="w-full h-[340px] sm:h-[394px] md:h-[540px] lg:h-[640px] xl:h-[682px]  relative">
             <Navbar 
                 setOpen={setOpen}
@@ -127,8 +127,8 @@ export default function Home()
                 <div key={i} className={`absolute w-full h-full inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out  ${i === index ? "opacity-100" : "opacity-0"} `} style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(${bg.img})`}}>
                    <h1 className=' absolute left-[6%] top-[30%] text-[23px] sm:text-[36px] md:text-[40px] lg:text-[60px] xl:text-[64px] text-[#FFFFFF] font-[Manrope] font-bold'>{bg.title}<p>{bg.title2}</p></h1>  
                    <div className=' text-[#FFFFFF] text-[10px] md:text-[16px] lg:text-[20px] xl:text-[20px]  absolute left-[6%] top-[57%]'><p>{bg.para}</p><p>{bg.para2}</p></div> 
-                   <Link to='/ourStory' className="w-[250px] sm:w-[294px] flex justify-center gap-4 items-center left-[-4%] top-[73%] sm:left-[-3%] sm:top-[72%] md:left-[2%] md:top-[70%] lg:left-[6%] lg:top-[70%] xl:left-[6%] xl:top-[70%] relative"><p className="text-[#FFFFFF] text-[17px] md:text-[20px] lg:text-[24px]">Discover Our Story</p><img className="w-[25px] h-[25px] md:h-[40px] md:w-[40px] lg:w-[60px] lg:h-[60px]" src={arrow}/></Link>
-                   <div className="flex justify-center items-center gap-4 sm:gap-7  h-[15px] absolute left-[20%] sm:left-[30%] md:left-[20%] lg:left-[27%] xl:left-[30%] top-[90%]">
+                   <Link to='/ourStory' className="w-[250px] sm:w-[294px] flex justify-center gap-4 items-center left-[-4%] top-[73%] sm:left-[-3%] sm:top-[72%] md:left-[2%] md:top-[70%] lg:left-[6%] lg:top-[70%] xl:left-[6%]  xl:top-[70%] relative"><p className="text-[#FFFFFF] text-[17px] md:text-[20px] lg:text-[24px]">Discover Our Story</p><img className="w-[25px] h-[25px] md:h-[40px] md:w-[40px] lg:w-[60px] lg:h-[60px]" src={arrow}/></Link>
+                   <div className="flex justify-center items-center gap-4 sm:gap-7  h-[15px] absolute left-[20%] sm:left-[30%] md:left-[20%] lg:left-[27%] xl:left-[30%] 2xl:left-[35%] top-[90%]">
                         <span className="w-[20px] sm:w-[25px] md:w-[60px] h-[3px] rounded-[10px]" style={{backgroundColor: index === 0 ? '#a16207' : 'gray'}}></span>
                         <span className="w-[20px] sm:w-[25px] md:w-[60px] h-[3px] rounded-[10px]" style={{backgroundColor: index === 1 ? '#a16207' : 'gray'}}></span>
                         <span className="w-[20px] sm:w-[25px] md:w-[60px] h-[3px] rounded-[10px]" style={{backgroundColor: index === 2 ? '#a16207' : 'gray'}}></span>
@@ -145,12 +145,12 @@ export default function Home()
          
             {
               !content &&
-               <div className="w-full 2xl:w-[1440px] flex flex-col justify-center items-center">
-                  <div className='w-[98%] pl-[10px] sm:pl-0 xl:w-[1300px] flex flex-col items-start text-[16px] sm:text-[20px] md:text-[26px] lg:text-[33px] xl:text-[36px] text-[#000000] py-[14px]'>
+               <div className="w-full xl:w-[1440px] 2xl:w-full flex flex-col justify-center items-center">
+                  <div className='w-[98%] pl-[10px] sm:pl-0 xl:w-[1300px] 2xl:w-[90%] flex flex-col items-start text-[16px] sm:text-[20px] md:text-[26px] lg:text-[33px] xl:text-[36px] text-[#000000] py-[14px]'>
                       <p>SWB is a Dubai-based holding company with a global reach. Through its</p>
                       <p>network of branches and interrelated companies across the  world.</p>
                   </div>
-                  <div className="w-[98%] gap-8 lg:w-[88%] xl:w-[1280px] flex flex-col justify-center items-center py-[30px]">
+                  <div className="w-[98%] gap-8 lg:w-[88%] xl:w-[1280px] 2xl:w-[90%] flex flex-col justify-center items-center py-[30px]">
                     <ReadMoreComponent 
                       title='BOSTANI CHOCOLATE'
                       link='/bostaniChocolate'

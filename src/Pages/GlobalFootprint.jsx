@@ -27,7 +27,7 @@ export default function GlobalFootprint()
 
 
     return(
-        <div className=" w-full md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[1440px] min-h-screen">
+        <div className=" w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen">
              <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`url(${mapBackground})`}}>
                   <Navbar 
                      setOpen={setOpen}

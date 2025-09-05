@@ -23,7 +23,7 @@ export default function SliderBigScreen(props)
           setSliderIndex(prev => prev - 1)
     }
     return(
-        <div className='md:w-[90%] lg:w-[88%] xl:w-[1280px] flex gap-[30px] items-center py-[10px]'>
+        <div className='md:w-[90%] lg:w-[88%] xl:w-[1280px] 2xl:w-[80%] flex gap-[30px] items-center py-[10px]'>
              <div className='md:w-[40%] md:h-[340px] lg:w-[40%] lg:h-[450px] xl:w-[490px] xl:h-[520px]'>
                 <img src={props.Arr1[sliderIndex]} className='w-full h-full'/>
             </div>

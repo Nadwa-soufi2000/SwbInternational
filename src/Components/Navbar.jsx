@@ -93,7 +93,7 @@ export default function Navbar(props)
 
 
     return(
-        <div className="relative  z-[1] md:w-full lg:bg-transparent lg:mt-0 lg:left-0  lg:w-[94%] xl:w-[1280.19px] px-[20px] lg:px-0 py-[20px] flex justify-between items-start my-[0px] mx-auto" id='nav'>
+        <div className="relative  z-[1] md:w-full lg:bg-transparent lg:mt-0 lg:left-0  lg:w-[94%] xl:w-[1280.19px] 2xl:w-[90%] px-[20px] lg:px-0 py-[20px] flex justify-between items-start my-[0px] mx-auto" id='nav'>
             <img src={swbW} className='w-[35px] h-[20px] sm:w-[60px] sm:h-[42px]'/>
             <ul className='hidden  lg:flex xl:flex justify-between items-start w-[90%] md:w-[487px] lg:w-[487px] lg:flex-row lg:gap-0'>
                 <Link to='/home' className='text-[#FFFFFF] text-[16px] lg:text-[20px] font-[Manrope]'>HOME</Link>

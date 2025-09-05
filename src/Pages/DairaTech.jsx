@@ -63,7 +63,7 @@ export default function DairaTech()
                                 )                 
 
     return(
-        <div className=' w-full md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[1440px] min-h-screen'>
+        <div className=' w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen'>
             <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(${daBg})`}}>
                  <Navbar 
                     setOpen={setOpen}
@@ -78,8 +78,8 @@ export default function DairaTech()
              {
                 !content &&
                 <>
-                 <div className='w-full 2xl:w-[1440px] flex  justify-center items-center'>
-                    <div className='w-[98%] lg:w-[88%] xl:w-[1280px] flex flex-col justify-center py-[30px] gap-[15px]'>
+                 <div className='w-full xl:w-[1440px] 2xl:w-full flex  justify-center items-center'>
+                    <div className='w-[98%] lg:w-[88%] xl:w-[1280px] 2xl:w-[80%] flex flex-col justify-center py-[30px] gap-[15px]'>
                         <div className=' flex items-center xl:gap-0 gap-[18px] justify-between py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
                              <BostaniChocolateDescription
                                 head='THE POWER OF SMART SOLUTIONS, ONE INNOVATION AT A TIME'
@@ -98,7 +98,7 @@ export default function DairaTech()
                         <div className='w-full flex justify-center md:justify-center lg:justify-start xl:justify-start items-center'>
                             <h1 className='font-bold text-[18px] sm:text-[20px] md:text-[33px] lg:text-[44px] xl:text-[48px] text-[#A2948A]'>Innovative products from DAIRA</h1>
                         </div>
-                        <div className='flex justify-center items-center flex-wrap w-full xl:w-[1280px] p-[20px] gap-[34px]'>
+                        <div className='flex justify-center items-center flex-wrap w-full xl:w-[1280px] 2xl:w-[100%] p-[20px] gap-[34px]'>
                             {
                                 showRobots
                             }

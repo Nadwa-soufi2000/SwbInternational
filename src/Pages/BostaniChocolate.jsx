@@ -59,7 +59,7 @@ export default function BostaniChocolate()
     
 
     return(
-        <div className='w-full md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[1440px] min-h-screen'>
+        <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen'>
             <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${chocoBg})`}}>
                  <Navbar 
                      setOpen={setOpen}
@@ -73,7 +73,7 @@ export default function BostaniChocolate()
             </div>
 
            { !content &&
-            <div className='w-full 2xl:w-[1440px] flex flex-col justify-center items-center'>
+            <div className='w-full xl:w-[1440px] 2xl:w-full flex flex-col justify-center items-center'>
          
             <div className='w-[98%] pl-[10px] sm:pl-0 xl:w-[1300px] flex flex-col items-start text-[16px] sm:text-[20px] md:text-[26px] lg:text-[33px] xl:text-[36px] text-[#000000] py-[14px]'>
                 <p>Bostani is a story of passion transformed into reality, beginning with a simple love </p>
@@ -89,7 +89,7 @@ export default function BostaniChocolate()
              {
               filter === 'Middle East' && 
              <>
-            <div className='w-[98%] lg:w-[88%] xl:w-[1280px] flex flex-col justify-center py-[30px]'>
+            <div className='w-[98%] lg:w-[88%] xl:w-[1280px] 2xl:w-[77%] flex flex-col justify-center py-[30px]'>
                 <div className='w-[100%] lg:w-[580px] xl:w-[630px] flex flex-col items-start sm:items-center md:items-center lg:items-start sm:pl-0 pl-[8px]'>
                     <h2 className='tracking-wide text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px] font-medium text-[#000000]'>SAUDI ARABIA</h2>
                     <p className='text-[13px] md:text-[17px] lg:text-[20px] xl:text-[24px] font-medium text-[#000000]'>Bostani Chocolate-A Trusted Namein Saudi Arabia</p>
@@ -138,7 +138,7 @@ export default function BostaniChocolate()
                 </div>
             </div>
 
-            <div className='w-[98%] lg:w-[88%] xl:w-[1281px] flex flex-col items-start py-[20px]'>
+            <div className='w-[98%] lg:w-[88%] xl:w-[1281px] 2xl:w-[80%] flex flex-col items-start py-[20px]'>
                <div className='w-[100%] lg:w-[580px] xl:w-[755px] flex flex-col items-start sm:items-center md:items-center lg:items-start sm:pl-0 pl-[10px]'>
                   <h2 className='tracking-wide  text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px] font-medium text-[#000000]'>UNITED ARAB EMIRATES</h2>
                   <p className='text-[13px] md:text-[17px] lg:text-[20px] xl:text-[24px] font-medium text-[#000000]'>Swb in Dubai-At the Heart of Innovation and Global Opportunity</p>
@@ -187,7 +187,7 @@ export default function BostaniChocolate()
           {
             filter === 'Europe' &&
             <>
-              <div className='w-[98%] lg:w-[88%] xl:w-[1281px] flex flex-col items-start py-[20px]'>
+              <div className='w-[98%] lg:w-[88%] xl:w-[1281px] 2xl:w-[77%] flex flex-col items-start py-[20px]'>
                <div className='w-[100%] lg:w-[580px] xl:w-[755px] flex flex-col items-start sm:pl-0 pl-[10px]'>
                   <h2 className='tracking-wide  text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px] font-medium text-[#000000]'>BELGIUM</h2>
                   <p className='text-[13px] md:text-[17px] lg:text-[20px] xl:text-[24px] font-medium text-[#000000]'>SWB in Europe — Expertise Rooted in Excellence</p>
@@ -209,7 +209,7 @@ export default function BostaniChocolate()
                     />
                 </div>
             </div>
-            <div className='w-[260px] md:w-[70%] rounded-[10px] lg:w-[88%] xl:w-[1281px] h-[230px] sm:h-[300px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center' style={{backgroundImage:`url(${b2})`}}></div>
+            <div className='w-[260px] md:w-[70%] rounded-[10px] lg:w-[88%] xl:w-[1281px] 2xl:w-[80%] h-[230px] sm:h-[300px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center' style={{backgroundImage:`url(${b2})`}}></div>
              <div className='w-[98%] lg:w-[88%] xl:w-[1300px] flex justify-center py-[30px]'>
                     <div className='w-full flex items-center xl:gap-0 gap-[18px] justify-between py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
                     <BostaniChocolateDescription
@@ -227,13 +227,13 @@ export default function BostaniChocolate()
                     <BostaniChocolatePicture pic={b3} diff={true}/>
                 </div>
              </div>
-             <div className='w-[98%] lg:w-[90%] xl:w-[1280px] flex flex-col justify-center py-[30px]'>
+             <div className='w-[98%] lg:w-[90%] xl:w-[1280px] 2xl:w-[77%] flex flex-col justify-center py-[30px]'>
                   <div className='flex justify-between items-center gap-[18px] xl:gap-0 w-full py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
                     <img src={b4} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[460px] xl:w-[650px] xl:h-[450px] rounded-[10px]'/>
                     <img src={b5} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[50%] lg:h-[450px] xl:w-[580px] xl:h-[540px] rounded-[10px]'/>
                 </div>
              </div>
-             <div className='w-[98%] lg:w-[88%] xl:w-[1281px] flex flex-col items-start py-[20px]'>
+             <div className='w-[98%] lg:w-[88%] xl:w-[1281px] 2xl:w-[80%] flex flex-col items-start py-[20px]'>
                <div className='w-[100%] lg:w-[580px] xl:w-[755px] flex flex-col items-start sm:pl-0 pl-[10px]'>
                   <h2 className='tracking-wide  text-[17px] md:text-[20px] lg:text-[30px] xl:text-[40px] font-medium text-[#000000]'>PARIS</h2>
                   <p className='text-[13px] md:text-[17px] lg:text-[20px] xl:text-[24px] font-medium text-[#000000]'>Our Presence in Paris — A Jewel of Elegance and Identity</p>
@@ -255,7 +255,7 @@ export default function BostaniChocolate()
                     />
                </div>
             </div>
-            <div className='w-[98%] lg:w-[88%] xl:w-[1300px] flex justify-center py-[30px]'>
+            <div className='w-[98%] lg:w-[88%] xl:w-[1300px] 2xl:w-[80%] flex justify-center py-[30px]'>
                     <div className='w-full flex items-center xl:gap-0 gap-[18px] justify-between py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
                     <BostaniChocolateDescription
                       head='A Taste of SWB: Where Design, Story, and Craft Unite'
