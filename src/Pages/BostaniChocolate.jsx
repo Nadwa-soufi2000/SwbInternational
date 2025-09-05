@@ -59,7 +59,7 @@ export default function BostaniChocolate()
     
 
     return(
-        <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen'>
+        <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen'>
             <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${chocoBg})`}}>
                  <Navbar 
                      setOpen={setOpen}
@@ -73,7 +73,7 @@ export default function BostaniChocolate()
             </div>
 
            { !content &&
-            <div className='w-full xl:w-[1440px] 2xl:w-full flex flex-col justify-center items-center'>
+            <div className='w-full xl:w-[1510px] 2xl:w-full flex flex-col justify-center items-center'>
          
             <div className='w-[98%] pl-[10px] sm:pl-0 xl:w-[1300px] flex flex-col items-start text-[16px] sm:text-[20px] md:text-[26px] lg:text-[33px] xl:text-[36px] text-[#000000] py-[14px]'>
                 <p>Bostani is a story of passion transformed into reality, beginning with a simple love </p>

@@ -115,7 +115,7 @@ export default function Home()
 
     
     return (
-        <div className="w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen">
+        <div className="w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen">
           <div className="w-full h-[340px] sm:h-[394px] md:h-[540px] lg:h-[640px] xl:h-[682px]  relative">
             <Navbar 
                 setOpen={setOpen}
@@ -145,7 +145,7 @@ export default function Home()
          
             {
               !content &&
-               <div className="w-full xl:w-[1440px] 2xl:w-full flex flex-col justify-center items-center">
+               <div className="w-full xl:w-[1510px] 2xl:w-full flex flex-col justify-center items-center">
                   <div className='w-[98%] pl-[10px] sm:pl-0 xl:w-[1300px] 2xl:w-[90%] flex flex-col items-start text-[16px] sm:text-[20px] md:text-[26px] lg:text-[33px] xl:text-[36px] text-[#000000] py-[14px]'>
                       <p>SWB is a Dubai-based holding company with a global reach. Through its</p>
                       <p>network of branches and interrelated companies across the  world.</p>

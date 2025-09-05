@@ -22,7 +22,7 @@ export default function BostaniRealEstate()
     const size = useContext(Size)
 
     return(
-       <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen'>
+       <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen'>
          <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${r3})`}}>
              <Navbar
                 setOpen={setOpen}
@@ -35,7 +35,7 @@ export default function BostaniRealEstate()
         </div>
        {
         !content &&
-          <div className='w-full xl:w-[1440px] 2xl:w-full flex flex-col justify-center items-center'>
+          <div className='w-full xl:w-[1510px] 2xl:w-full flex flex-col justify-center items-center'>
           <div className='w-[98%] lg:w-[88%] xl:w-[1281px] 2xl:w-[74%] flex flex-col items-start py-[20px] gap-[20px]'>
              <div className='w-full flex  items-center justify-between py-[20px] flex-col md:flex-col lg:flex-row xl:flex-row xl:gap-0 gap-[18px]'>
                 <img src={r5} className='w-[260px] h-[260px] md:w-[580px] md:h-[580px] lg:w-[480px] lg:h-[400px] xl:w-[710px] xl:h-[405px] rounded-[10px]'/>

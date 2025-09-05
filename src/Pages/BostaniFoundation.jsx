@@ -21,7 +21,7 @@ export default function BostaniFoundation()
     const[content , setContent] = useState(false)
     
     return(
-        <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1440px] min-h-screen'>
+        <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen'>
             <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${fo1})`}}>
                 <Navbar 
                   setOpen={setOpen}
@@ -35,7 +35,7 @@ export default function BostaniFoundation()
          </div>
          {
             !content &&
-            <div className='w-full xl:w-[1440px] 2xl:w-full flex flex-col justify-center items-center'>
+            <div className='w-full xl:w-[1510px] 2xl:w-full flex flex-col justify-center items-center'>
             <div className='w-[98%] gap-8 lg:w-[88%] xl:w-[1280px] 2xl:w-[90%] flex flex-col justify-center items-center py-[30px]'>
                 <div className="flex w-[90%] md:w-[60%] lg:w-[90%] xl:w-full xl:flex-row lg:flex-row md:flex-col flex-col justify-center items-center gap-[20px]">
                     <div className="w-full h-[300px] md:h-[420px] md:w-[100%]  lg:w-[390px] lg:h-[450px] xl:w-[460px] xl:h-[520px] ">
