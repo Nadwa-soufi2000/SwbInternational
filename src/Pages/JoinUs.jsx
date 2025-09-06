@@ -112,7 +112,7 @@ export default function JoinUs()
              closeMessage={closeMessage}
             />
         }
-       <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen '>
+       <div className='w-full md:w-[100%] lg:w-[100%] 2xl:w-[1700px] xl:w-[1510px] min-h-screen '>
           <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${joinBg})`}}>
                  <Navbar 
                      setOpen={setOpen}
@@ -127,7 +127,7 @@ export default function JoinUs()
             {
                 !content &&
                 <>
-                <div className='w-full xl:w-[1510px] 2xl:w-full flex flex-col justify-center items-center py-[40px]'>
+                <div className='w-full xl:w-[1510px] 2xl:w-[1700px] flex flex-col justify-center items-center py-[40px]'>
                     <div className='w-[290px] h-auto sm:w-[400px] sm:h-auto  md:w-[600px] md:h-auto lg:w-[700px] lg:h-[1100px]  xl:w-[985px] xl:h-[1101px] 2xl:w-[985px] 2xl:h-[1101px] rounded-[10px] py-[20px] bg-[#CBC0B7]/30'>
                         <div className='flex flex-col justify-center items-start pl-[2px]  sm:pl-[10px] md:pl-[10px] lg:pl-[20px] xl:pl-[40px] w-full'>
                              <h1 className='text-[20px] sm:text-[24px] md:text-[30px] lg:text-[40px] xl:text-[48px] 2xl:text-[48px] text-[#363940] pl-[10px] font-semibold'>JOIN US !</h1>
