@@ -1,5 +1,10 @@
+import { useContext } from "react"
+import { Size } from "./WindowSize"
+
+
 export default function ContactInformation(props) 
 {
+    const size = useContext(Size)
     return(
         <div className="w-[310px] sm:w-[400px] md:[500px] lg:w-[800px] xl:w-[1043px] 2xl:w-[1043px] h-auto md:h-auto lg:h-auto xl:h-[204px] 2xl:h-[204px] py-[20px] rounded-[20px] border-[#A2948A]/40 flex  relative flex-col gap-[20px] border-[1.5px] border-solid">
             <div className="flex  gap-[250px] w-[94%] lg:w-[90%] xl:w-[80%] 2xl:w-[80%] my-0 mx-auto">
