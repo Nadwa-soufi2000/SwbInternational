@@ -63,7 +63,7 @@ export default function DairaTech()
                                 )                 
 
     return(
-        <div className=' w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen'>
+        <div className=' w-full md:w-[100%] lg:w-[100%] 2xl:w-[1700px] xl:w-[1510px] min-h-screen'>
             <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(${daBg})`}}>
                  <Navbar 
                     setOpen={setOpen}
@@ -78,7 +78,7 @@ export default function DairaTech()
              {
                 !content &&
                 <>
-                 <div className='w-full xl:w-[1510px] 2xl:w-full flex  justify-center items-center'>
+                 <div className='w-full xl:w-[1510px] 2xl:w-[1700px] flex  justify-center items-center'>
                     <div className='w-[98%] lg:w-[88%] xl:w-[1280px] 2xl:w-[80%] flex flex-col justify-center py-[30px] gap-[15px]'>
                         <div className=' flex items-center xl:gap-0 gap-[18px] justify-between py-[30px] flex-col md:flex-col lg:flex-row xl:flex-row'>
                              <BostaniChocolateDescription
