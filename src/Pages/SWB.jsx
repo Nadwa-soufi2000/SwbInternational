@@ -27,7 +27,7 @@ export default function SWB()
   //}
   
     return(
-        <div className=" w-full md:w-[100%] lg:w-[100%] 2xl:w-[100%] xl:w-[1510px] min-h-screen">
+        <div className=" w-full md:w-[100%] lg:w-[100%] 2xl:w-[1700px] xl:w-[1510px] min-h-screen">
           <div className="w-full h-[230px] sm:h-[350px] md:h-[440px] lg:h-[500px] xl:h-[582px] bg-cover bg-center relative" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(${s1})`}} >
              <Navbar 
                  setOpen={setOpen}
