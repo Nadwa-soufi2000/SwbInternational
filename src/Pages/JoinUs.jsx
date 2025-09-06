@@ -201,7 +201,7 @@ export default function JoinUs()
                                 <label className='text-[16px] sm:text-[18px] text-[#363940]'>Jop application letter</label>
                                 <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='w-full h-[136px] rounded-[8px]  bg-[#FFFFFF] pl-[10px] pt-[10px] outline-none'></textarea>
                             </div>
-                            <button className='  ml-0 md:ml-[33px] lg:ml-0 w-[97%] sm:w-[97%] md:w-[85%] lg:w-[550px] xl:w-[602px] 2xl:w-[602px] h-[50px] sm:h-[56px] rounded-[8px] bg-[#A2948A] text-[#F1F2F5] text-[18px] sm:text-[24px]'>Send Message</button>
+                            <button className='  ml-0 md:ml-[33px] lg:ml-0 w-[97%] sm:w-[97%] md:w-[85%] lg:w-[550px] xl:w-[602px] 2xl:w-[602px] h-[45px] sm:h-[56px] rounded-[8px] bg-[#A2948A] text-[#F1F2F5] text-[17px] sm:text-[24px]'>Send Message</button>
                         </form>
                      </div>
                  </div>
