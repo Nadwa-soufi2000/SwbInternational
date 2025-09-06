@@ -33,7 +33,7 @@ export default function ContactUs()
             !content &&
             <>
            <div className='w-full xl:w-[1510px] 2xl:w-full flex flex-col justify-center items-center py-[40px]'>
-                <div className='w-[275px] h-auto sm:w-[400px] sm:h-auto  md:w-[600px] md:h-auto lg:w-[700px] lg:h-[777px]  xl:w-[985px] xl:h-[777px] 2xl:w-[985px] 2xl:h-[777px] rounded-[10px] py-[20px] bg-[#CBC0B7]/30 flex flex-col justify-center items-center gap-[20px]'>
+                <div className='w-[290px] h-auto sm:w-[400px] sm:h-auto  md:w-[600px] md:h-auto lg:w-[700px] lg:h-[777px]  xl:w-[985px] xl:h-[777px] 2xl:w-[985px] 2xl:h-[777px] rounded-[10px] py-[20px] bg-[#CBC0B7]/30 flex flex-col justify-center items-center gap-[20px]'>
                    <h1 className='text-[20px] sm:text-[24px] md:text-[30px] lg:text-[40px] xl:text-[48px] 2xl:text-[48px] text-[#363940] pl-[10px] font-semibold'>Get In Touch with Us !</h1>
                    <form className='w-[96%] sm:w-[90%] md:w-[90%] lg:w-[550px] xl:w-[761px] 2xl:w-[761px] flex flex-col justify-start items-start gap-[20px] sm:gap-[25px] md:gap-[39px]'>
                          <div className='w-full flex flex-col items-start justify-center gap-2'>
