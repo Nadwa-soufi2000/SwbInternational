@@ -15,7 +15,7 @@ export default function AboutLinks(props)
             <Link to='/whoWeAre' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:bg-white/20 hover:pl-[15px] p-[8px] hover:rounded-[10px] duration-[0.5s]'><p>Who We Are</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
             <Link to='/globalFootprint' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:bg-white/20 hover:pl-[15px] p-[8px] hover:rounded-[10px] duration-[0.5s]'><p>Global Footprint</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
             <Link to='/ourStory' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:bg-white/20 hover:pl-[15px] p-[8px] hover:rounded-[10px] duration-[0.5s]'><p>The Story Behind The Brand</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
-            <Link className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:bg-white/20 hover:pl-[15px] p-[8px] hover:rounded-[10px] duration-[0.5s]'><p>Contact Us</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
+            <Link to='/contactUs' className='w-full flex text-[#FFFFFF] justify-between items-center lg:text-[15px] xl:text-[18px] hover:bg-white/20 hover:pl-[15px] p-[8px] hover:rounded-[10px] duration-[0.5s]'><p>Contact Us</p><MdOutlineKeyboardArrowRight className='fill-current text-[#FFFFFF]'/></Link>
          </div>
     )
 }
